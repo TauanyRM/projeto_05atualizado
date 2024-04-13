@@ -1,0 +1,122 @@
+.cardapio {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #630000, #600003, #5d0007, #5a0009, #57000c);
+}
+
+
+
+.cliente-container {
+  background-color: white;
+  padding: 5px; /* Diminui o padding */
+  margin-top: 15px; /* Diminui a margem superior */
+  margin-left: 5px; /* Diminui a margem esquerda */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Diminui a margem inferior */
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  max-width: 300px; /* Define a largura máxima desejada */
+}
+
+h2{
+  font-family: 'Brasika Display - Trial', sans-serif;
+  color: black;
+  font-size: 25px;
+
+
+}
+
+h3{
+  margin-left: 15px;
+  font-family: 'Brasika Display - Trial', sans-serif;
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: 'Brasika Display - Trial', sans-serif;
+  font-size: 40px;
+  color: rgb(15, 0, 0);
+  font-weight: 400;
+}
+
+
+.lista-pratos,
+.lista-bebidas,
+.lista-drinks,
+.lista-sobremesas {
+  list-style-type: none;
+}
+
+.item-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item-info {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  min-height: 20px;
+  overflow: auto;
+  width: 100%;
+
+}
+
+.item-info h4,
+.item-info p {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  margin-top: -1px;
+}
+
+.item-imagem-container {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  background-color: rgb(255, 255, 255); /* Adiciona fundo branco apenas para a imagem */
+  border-radius: 10px; /* Arredonda as bordas */
+}
+
+
+.item-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  margin-top: -5px;
+  background-color: #01360a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #01352c;
+}
+
+@media (min-width: 768px) {
+  .item-info {
+    margin-left: 580px;
+    max-width: calc(70% - 250px - 200px);
+    margin-left: 50px;
+  }
+
+  .item-imagem-container {
+    margin-left: -20px;
+  }
+
+
+}

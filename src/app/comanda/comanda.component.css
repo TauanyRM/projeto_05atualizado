@@ -1,0 +1,63 @@
+.comanda {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2{
+    font-family: 'Brasika Display - Trial', sans-serif;
+    font-size: 28px;
+    color: black;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .item button {
+    background-color: #da2114;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 8px;
+  }
+
+  .item button:hover {
+    background-color: #700202;
+  }
+
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+
+  .comanda-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #fffefebb;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    width: 370px; /* Ajuste a largura conforme desejado */
+
+  }
+
+

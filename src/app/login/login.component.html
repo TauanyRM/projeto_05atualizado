@@ -1,0 +1,25 @@
+<link href="https://fonts.cdnfonts.com/css/brasika-display-trial" rel="stylesheet">
+link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<div class="background"><div class="container">
+  <div class="heading">Bem vindo ao Cardapio Digital!</div>
+  <form class="form" (submit)="login()">
+    <div class="mb-3">
+      <label for="inputName" class="form-label"></label>
+      <input type="text" class="form-control form-control-sm input" id="inputName" aria-describedby="emailHelp" name="name" required [(ngModel)]="name" placeholder="Nome">
+    </div>
+    <div class="mb-3">
+      <label for="inputPhone" class="form-label"></label>
+      <input type="text" class="form-control form-control-sm input" id="inputPhone" name="phone" required [(ngModel)]="phone" placeholder="Telefone">
+    </div>
+    <div class="mb-3">
+      <label for="inputNumber" class="form-label"></label>
+      <input type="text" class="form-control form-control-sm input" id="inputPhone" name="numMesa" required [(ngModel)]="numMesa" placeholder="Numero da Mesa">
+    </div>
+    <button type="submit" class="btn btn-primary login-button">Acessar</button>
+  </form>
+</div>
+</div>

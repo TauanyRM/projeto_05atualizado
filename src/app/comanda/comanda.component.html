@@ -1,0 +1,14 @@
+<link href="https://fonts.cdnfonts.com/css/brasika-display-trial" rel="stylesheet">
+
+<div class="comanda-container">
+    <h2 >Comanda</h2>
+    <ul class="comanda">
+      <li *ngFor="let item of comandaService.itens; let i = index" class="item">
+        <div>
+          <span style="font-family: 'Rubik', sans-serif;">{{ item.nome }}</span>
+        </div>
+        <button (click)="removerItem(i)" style="font-family: 'Rubik', sans-serif;">Remover</button>
+      </li>
+    </ul>
+    <div class="total" style="font-family: 'Rubik', sans-serif;">Total: R$ {{ comandaService.precoTotal.toFixed(2) }}</div>
+  </div>
